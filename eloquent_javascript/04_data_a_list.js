@@ -48,4 +48,4 @@ function nth(list, num){
 
 }
 
-console.log(nth(arrayToList([10, 20, 30]), 1));
+//console.log(nth(arrayToList([10, 20, 30]), 1));
