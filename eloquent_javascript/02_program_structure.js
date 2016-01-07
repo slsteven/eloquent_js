@@ -21,25 +21,19 @@ for (var i = 0; i < 100; i++) {
 //Chessboard
 function chessboard(x){
 
-  for (var i = 1; i <= x; i++) {
-    if(i % 2 == 1){
-      var line = "";
+ var size = 8;
+
+var board = "";
+
+  for (var y = 0; y < size; y++) {
+    for (var x = 0; x < size; x++) {
+      if ((x + y) % 2 == 0)
+        board += " ";
+      else
+        board += "#";
     }
-    else {
-      var line = " ";
-    }
-      for (var j = 1; j <= x; j++){
-        if(j % 2 == 1){
-          line += " ";
-        }
-        if(j % 2 == 0){
-          line += "#";
-        }
-        if(j % x == 0){
-          line += "\n"
-        }
-      }
-      console.log(line);
-    }
+    board += "\n";
+  }
+  console.log(board);
 }
 chessboard(8);

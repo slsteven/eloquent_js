@@ -61,4 +61,3 @@ reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 
-
